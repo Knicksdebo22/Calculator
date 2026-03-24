@@ -60,17 +60,17 @@ function getLastTypedNumber(nextExpr: string) {
 function CalcIcon() {
   return (
     <svg viewBox="0 0 24 24" className="calc-icon" aria-hidden="true">
-      <rect x="4.2" y="2.1" width="15.6" height="19.8" rx="3.3" fill="currentColor" />
-      <rect x="6.8" y="5.1" width="10.4" height="4.0" rx="1.1" fill="#2b2b35" />
-      <circle cx="8.4" cy="12.6" r="0.95" fill="#2b2b35" />
-      <circle cx="12" cy="12.6" r="0.95" fill="#2b2b35" />
-      <circle cx="15.6" cy="12.6" r="0.95" fill="#2b2b35" />
-      <circle cx="8.4" cy="16.0" r="0.95" fill="#2b2b35" />
-      <circle cx="12" cy="16.0" r="0.95" fill="#2b2b35" />
-      <circle cx="15.6" cy="16.0" r="0.95" fill="#2b2b35" />
-      <circle cx="8.4" cy="19.4" r="0.95" fill="#2b2b35" />
-      <circle cx="12" cy="19.4" r="0.95" fill="#2b2b35" />
-      <circle cx="15.6" cy="19.4" r="0.95" fill="#2b2b35" />
+      <rect x="4.25" y="1.5" width="15.5" height="21" rx="3.35" fill="currentColor" />
+      <rect x="6.8" y="4.6" width="10.4" height="4.3" rx="1.2" fill="#2b2b35" />
+      <circle cx="8.35" cy="12.9" r="1.12" fill="#2b2b35" />
+      <circle cx="12" cy="12.9" r="1.12" fill="#2b2b35" />
+      <circle cx="15.65" cy="12.9" r="1.12" fill="#2b2b35" />
+      <circle cx="8.35" cy="16.55" r="1.12" fill="#2b2b35" />
+      <circle cx="12" cy="16.55" r="1.12" fill="#2b2b35" />
+      <circle cx="15.65" cy="16.55" r="1.12" fill="#2b2b35" />
+      <circle cx="8.35" cy="20.2" r="1.12" fill="#2b2b35" />
+      <circle cx="12" cy="20.2" r="1.12" fill="#2b2b35" />
+      <circle cx="15.65" cy="20.2" r="1.12" fill="#2b2b35" />
     </svg>
   );
 }
@@ -248,6 +248,34 @@ function App() {
     setJustEvaluated(false);
   }
 
+  function renderLabel(value: CalcKey) {
+    if (value === "calc") {
+      return <CalcIcon />;
+    }
+
+    if (value === "+/-") {
+      return (
+        <span className="button-text pm-wrap" aria-hidden="true">
+          <span className="pm-plus">+</span>
+          <span className="pm-slash">/</span>
+          <span className="pm-minus">−</span>
+        </span>
+      );
+    }
+
+    return (
+      <span
+        className={[
+          "button-text",
+          value === "AC" ? "ac-text" : "",
+          operators.has(value) || value === "=" ? "operator-text" : "",
+        ].join(" ").trim()}
+      >
+        {value}
+      </span>
+    );
+  }
+
   function onPress(value: CalcKey) {
     if (value === "calc") return;
 
@@ -315,13 +343,7 @@ function App() {
                 onClick={() => onPress(value)}
                 className={buttonClass}
               >
-                {value === "calc" ? (
-                  <CalcIcon />
-                ) : (
-                  <span className={value === "AC" ? "button-text ac-text" : "button-text"}>
-                    {value}
-                  </span>
-                )}
+                {renderLabel(value)}
               </button>
             );
           })}

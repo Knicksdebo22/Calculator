@@ -54,7 +54,7 @@ button {
 .top-accent span {
   position: relative;
   display: block;
-  width: 28px;
+  width: 24px;
   height: 2px;
   margin-left: 8px;
   border-radius: 999px;
@@ -92,7 +92,7 @@ button {
   height: 34px;
   color: #3f4050;
   font-size: 22px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: -0.03em;
   text-align: right;
   width: 100%;
@@ -112,7 +112,7 @@ button {
   align-items: flex-end;
   text-align: right;
   font-size: clamp(56px, 18vw, 92px);
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1;
   letter-spacing: -0.05em;
   white-space: nowrap;
@@ -147,13 +147,13 @@ button {
 }
 
 .calc-button.orange {
-  background: #f7aa17;
+  background: #e19713;
   color: white;
 }
 
 .button-text {
   font-size: 30px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1;
 }
 
@@ -161,10 +161,48 @@ button {
   font-size: 31px;
 }
 
+.operator-text {
+  font-size: 31px;
+  font-weight: 400;
+}
+
 .calc-icon {
   width: 42px;
-  height: 42px;
+  height: 50px;
   display: block;
+}
+
+.pm-wrap {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.pm-plus,
+.pm-minus,
+.pm-slash {
+  position: absolute;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.pm-plus {
+  top: 1px;
+  left: 3px;
+}
+
+.pm-minus {
+  right: 2px;
+  bottom: 1px;
+}
+
+.pm-slash {
+  left: 16px;
+  top: 3px;
+  transform: rotate(-21deg);
+  transform-origin: center;
 }
 
 @media (min-width: 700px) {
