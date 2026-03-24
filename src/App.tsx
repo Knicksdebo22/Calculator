@@ -61,7 +61,7 @@ function CalcIcon() {
   return (
     <svg viewBox="0 0 24 24" className="calc-icon" aria-hidden="true">
       <rect x="4.25" y="1.2" width="15.5" height="21.9" rx="3.35" fill="currentColor" />
-      <rect x="6.8" y="4.6" width="10.4" height="4.3" rx="1.2" fill="#2b2b35" />
+      <rect x="6.35" y="4.6" width="11.3" height="4.3" rx="1.2" fill="#2b2b35" />
       <circle cx="8.35" cy="12.9" r="1.12" fill="#2b2b35" />
       <circle cx="12" cy="12.9" r="1.12" fill="#2b2b35" />
       <circle cx="15.65" cy="12.9" r="1.12" fill="#2b2b35" />
