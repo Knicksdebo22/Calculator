@@ -37,154 +37,8 @@ button {
   flex-direction: column;
 }
 
-.status-bar {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8px 28px 0 28px;
-  min-height: 42px;
-  flex-shrink: 0;
-}
-
-.status-left,
-.status-right {
-  display: flex;
-  align-items: center;
-  z-index: 2;
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-}
-
-.status-left {
-  gap: 8px;
-}
-
-.status-right {
-  gap: 7px;
-}
-
-.dnd-icon {
-  font-size: 16px;
-  line-height: 1;
-  color: #6c63ff;
-  transform: translateY(-1px);
-}
-
-.dynamic-island {
-  position: absolute;
-  top: 4px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 124px;
-  height: 36px;
-  border-radius: 999px;
-  background: #070707;
-  border: 1px solid rgba(255,255,255,0.05);
-}
-
-.carrier-text {
-  font-size: 11px;
-  font-weight: 500;
-  color: rgba(255,255,255,0.92);
-  letter-spacing: -0.01em;
-}
-
-.signal-bars.smooth {
-  display: flex;
-  align-items: flex-end;
-  gap: 2.5px;
-  height: 14px;
-}
-
-.signal-bars.smooth span {
-  display: block;
-  width: 3.4px;
-  border-radius: 999px;
-  background: rgba(255,255,255,0.32);
-}
-
-.signal-bars.smooth span:nth-child(1) {
-  height: 5px;
-  background: rgba(255,255,255,0.95);
-}
-
-.signal-bars.smooth span:nth-child(2) {
-  height: 8px;
-  background: rgba(255,255,255,0.95);
-}
-
-.signal-bars.smooth span:nth-child(3) {
-  height: 11px;
-}
-
-.signal-bars.smooth span:nth-child(4) {
-  height: 14px;
-}
-
-.battery-outline {
-  position: relative;
-  width: 25px;
-  height: 13px;
-  border: 1.7px solid rgba(255,255,255,0.78);
-  border-radius: 4px;
-}
-
-.battery-fill {
-  position: absolute;
-  left: 1.5px;
-  top: 1.5px;
-  width: 13px;
-  height: 8px;
-  border-radius: 2.5px;
-  background: #f2c94c;
-}
-
-.battery-cap {
-  position: absolute;
-  right: -3px;
-  top: 3px;
-  width: 2px;
-  height: 5px;
-  border-radius: 0 2px 2px 0;
-  background: rgba(255,255,255,0.55);
-}
-
-.menu-row {
-  flex-shrink: 0;
-  padding: 18px 32px 0 32px;
-}
-
-.menu-button {
-  background: transparent;
-  color: #f5a623;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  padding: 0;
-}
-
-.menu-button span {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.menu-button i {
-  width: 3px;
-  height: 3px;
-  border-radius: 999px;
-  background: currentColor;
-  display: block;
-}
-
-.menu-button b {
-  width: 28px;
-  height: 3px;
-  border-radius: 999px;
-  background: currentColor;
-  display: block;
+.clean-top {
+  justify-content: flex-end;
 }
 
 .display-area {
@@ -195,6 +49,11 @@ button {
   justify-content: flex-end;
   align-items: flex-end;
   padding: 6px 32px 8px 32px;
+}
+
+.clean-display {
+  padding-top: 0;
+  padding-bottom: 10px;
 }
 
 .secondary-display {
@@ -233,7 +92,7 @@ button {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 12px;
-  padding: 0 20px 8px 20px;
+  padding: 0 20px 18px 20px;
 }
 
 .calc-button {
@@ -273,20 +132,6 @@ button {
 .calc-icon {
   width: 28px;
   height: 28px;
-}
-
-.home-indicator-wrap {
-  flex-shrink: 0;
-  display: flex;
-  justify-content: center;
-  padding-bottom: max(8px, env(safe-area-inset-bottom));
-}
-
-.home-indicator {
-  width: 160px;
-  height: 5px;
-  border-radius: 999px;
-  background: rgba(255,255,255,0.92);
 }
 
 @media (min-width: 700px) {

@@ -57,14 +57,6 @@ function getLastTypedNumber(nextExpr: string) {
   return matches && matches.length > 0 ? matches[matches.length - 1] : "";
 }
 
-function formatCurrentTime(date: Date) {
-  return date.toLocaleTimeString([], {
-    hour: "2-digit",
-    minute: "2-digit",
-    hour12: false,
-  });
-}
-
 function CalcIcon() {
   return (
     <svg
@@ -141,16 +133,6 @@ function App() {
   const [justEvaluated, setJustEvaluated] = useState(false);
   const [lastTypedNumber, setLastTypedNumber] = useState("");
   const [clearPrimed, setClearPrimed] = useState(false);
-  const [currentTime, setCurrentTime] = useState(formatCurrentTime(new Date()));
-
-  useEffect(() => {
-    const updateTime = () => setCurrentTime(formatCurrentTime(new Date()));
-    updateTime();
-
-    const interval = window.setInterval(updateTime, 1000);
-
-    return () => window.clearInterval(interval);
-  }, []);
 
   const secondaryLine = useMemo(() => {
     if (!expression || justEvaluated) return "";
@@ -309,43 +291,8 @@ function App() {
 
   return (
     <div className="app-shell">
-      <div className="app-inner">
-        <div className="status-bar">
-          <div className="status-left">
-            <span>{currentTime}</span>
-            <span className="dnd-icon" aria-hidden="true">
-              🌙
-            </span>
-          </div>
-
-          <div className="dynamic-island" />
-
-          <div className="status-right">
-            <span className="carrier-text">Verizon 5G</span>
-
-            <div className="signal-bars smooth" aria-hidden="true">
-              <span />
-              <span />
-              <span />
-              <span />
-            </div>
-
-            <div className="battery-outline" aria-hidden="true">
-              <div className="battery-fill" />
-              <div className="battery-cap" />
-            </div>
-          </div>
-        </div>
-
-        <div className="menu-row">
-          <button type="button" className="menu-button" aria-label="Menu">
-            <span><i /><b /></span>
-            <span><i /><b /></span>
-            <span><i /><b /></span>
-          </button>
-        </div>
-
-        <div className="display-area">
+      <div className="app-inner clean-top">
+        <div className="display-area clean-display">
           <div className="secondary-display">
             {secondaryLine || <span className="hidden-zero">0</span>}
           </div>
@@ -381,10 +328,6 @@ function App() {
             );
           })}
         </div>
-
-        <div className="home-indicator-wrap">
-          <div className="home-indicator" />
-        </div>
       </div>
     </div>
   );
@@ -399,7 +342,6 @@ const helperChecks = [
   getLastTypedNumber("12+345") === "345",
   getLastTypedNumber("7.5×2") === "2",
   formatDisplay("1000") === "1,000",
-  /^\d{2}:\d{2}$/.test(formatCurrentTime(new Date())),
 ];
 
 if (helperChecks.some((passed) => !passed)) {
