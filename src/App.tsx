@@ -64,22 +64,22 @@ function CalcIcon() {
       className="calc-icon"
       fill="none"
       stroke="currentColor"
-      strokeWidth="1.7"
+      strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
       aria-hidden="true"
     >
-      <rect x="5" y="3.2" width="14" height="17.6" rx="3.2" />
-      <rect x="7.6" y="5.8" width="8.8" height="2.9" rx="1.1" />
-      <circle cx="8.7" cy="12.1" r="0.75" fill="currentColor" stroke="none" />
-      <circle cx="12" cy="12.1" r="0.75" fill="currentColor" stroke="none" />
-      <circle cx="15.3" cy="12.1" r="0.75" fill="currentColor" stroke="none" />
-      <circle cx="8.7" cy="15.2" r="0.75" fill="currentColor" stroke="none" />
-      <circle cx="12" cy="15.2" r="0.75" fill="currentColor" stroke="none" />
-      <circle cx="15.3" cy="15.2" r="0.75" fill="currentColor" stroke="none" />
-      <circle cx="8.7" cy="18.3" r="0.75" fill="currentColor" stroke="none" />
-      <circle cx="12" cy="18.3" r="0.75" fill="currentColor" stroke="none" />
-      <circle cx="15.3" cy="18.3" r="0.75" fill="currentColor" stroke="none" />
+      <rect x="4.6" y="2.8" width="14.8" height="18.4" rx="3" />
+      <rect x="7.1" y="5.4" width="9.8" height="3" rx="0.9" fill="#2b2b35" stroke="none" />
+      <circle cx="8.6" cy="12.1" r="0.82" fill="#2b2b35" stroke="none" />
+      <circle cx="12" cy="12.1" r="0.82" fill="#2b2b35" stroke="none" />
+      <circle cx="15.4" cy="12.1" r="0.82" fill="#2b2b35" stroke="none" />
+      <circle cx="8.6" cy="15.35" r="0.82" fill="#2b2b35" stroke="none" />
+      <circle cx="12" cy="15.35" r="0.82" fill="#2b2b35" stroke="none" />
+      <circle cx="15.4" cy="15.35" r="0.82" fill="#2b2b35" stroke="none" />
+      <circle cx="8.6" cy="18.6" r="0.82" fill="#2b2b35" stroke="none" />
+      <circle cx="12" cy="18.6" r="0.82" fill="#2b2b35" stroke="none" />
+      <circle cx="15.4" cy="18.6" r="0.82" fill="#2b2b35" stroke="none" />
     </svg>
   );
 }
@@ -97,7 +97,8 @@ function App() {
 
     ensureMeta('meta[name="viewport"]', {
       name: "viewport",
-      content: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover",
+      content:
+        "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover",
     });
 
     ensureMeta('meta[name="apple-mobile-web-app-capable"]', {

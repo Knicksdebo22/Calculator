@@ -52,9 +52,23 @@ button {
 }
 
 .top-accent span {
+  position: relative;
   display: block;
-  width: 52px;
-  height: 6px;
+  width: 34px;
+  height: 3px;
+  margin-left: 10px;
+  border-radius: 999px;
+  background: #f5a623;
+}
+
+.top-accent span::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  width: 3px;
+  height: 3px;
+  transform: translateY(-50%);
   border-radius: 999px;
   background: #f5a623;
 }
@@ -148,8 +162,8 @@ button {
 }
 
 .calc-icon {
-  width: 28px;
-  height: 28px;
+  width: 42px;
+  height: 42px;
 }
 
 @media (min-width: 700px) {
