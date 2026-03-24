@@ -64,22 +64,22 @@ function CalcIcon() {
       className="calc-icon"
       fill="none"
       stroke="currentColor"
-      strokeWidth="1.8"
+      strokeWidth="1.7"
       strokeLinecap="round"
       strokeLinejoin="round"
       aria-hidden="true"
     >
-      <rect x="4.5" y="2.75" width="15" height="18.5" rx="2.5" />
-      <rect x="7.25" y="5.5" width="9.5" height="3.5" rx="1" />
-      <circle cx="8.25" cy="12" r="0.7" fill="currentColor" stroke="none" />
-      <circle cx="12" cy="12" r="0.7" fill="currentColor" stroke="none" />
-      <circle cx="15.75" cy="12" r="0.7" fill="currentColor" stroke="none" />
-      <circle cx="8.25" cy="15.5" r="0.7" fill="currentColor" stroke="none" />
-      <circle cx="12" cy="15.5" r="0.7" fill="currentColor" stroke="none" />
-      <circle cx="15.75" cy="15.5" r="0.7" fill="currentColor" stroke="none" />
-      <circle cx="8.25" cy="19" r="0.7" fill="currentColor" stroke="none" />
-      <circle cx="12" cy="19" r="0.7" fill="currentColor" stroke="none" />
-      <circle cx="15.75" cy="19" r="0.7" fill="currentColor" stroke="none" />
+      <rect x="5" y="3.2" width="14" height="17.6" rx="3.2" />
+      <rect x="7.6" y="5.8" width="8.8" height="2.9" rx="1.1" />
+      <circle cx="8.7" cy="12.1" r="0.75" fill="currentColor" stroke="none" />
+      <circle cx="12" cy="12.1" r="0.75" fill="currentColor" stroke="none" />
+      <circle cx="15.3" cy="12.1" r="0.75" fill="currentColor" stroke="none" />
+      <circle cx="8.7" cy="15.2" r="0.75" fill="currentColor" stroke="none" />
+      <circle cx="12" cy="15.2" r="0.75" fill="currentColor" stroke="none" />
+      <circle cx="15.3" cy="15.2" r="0.75" fill="currentColor" stroke="none" />
+      <circle cx="8.7" cy="18.3" r="0.75" fill="currentColor" stroke="none" />
+      <circle cx="12" cy="18.3" r="0.75" fill="currentColor" stroke="none" />
+      <circle cx="15.3" cy="18.3" r="0.75" fill="currentColor" stroke="none" />
     </svg>
   );
 }
@@ -292,6 +292,12 @@ function App() {
   return (
     <div className="app-shell">
       <div className="app-inner clean-top">
+        <div className="top-accent" aria-hidden="true">
+          <span />
+          <span />
+          <span />
+        </div>
+
         <div className="display-area clean-display">
           <div className="secondary-display">
             {secondaryLine || <span className="hidden-zero">0</span>}
