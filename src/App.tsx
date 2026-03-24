@@ -62,24 +62,19 @@ function CalcIcon() {
     <svg
       viewBox="0 0 24 24"
       className="calc-icon"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
       aria-hidden="true"
     >
-      <rect x="4.6" y="2.8" width="14.8" height="18.4" rx="3" />
-      <rect x="7.1" y="5.4" width="9.8" height="3" rx="0.9" fill="#2b2b35" stroke="none" />
-      <circle cx="8.6" cy="12.1" r="0.82" fill="#2b2b35" stroke="none" />
-      <circle cx="12" cy="12.1" r="0.82" fill="#2b2b35" stroke="none" />
-      <circle cx="15.4" cy="12.1" r="0.82" fill="#2b2b35" stroke="none" />
-      <circle cx="8.6" cy="15.35" r="0.82" fill="#2b2b35" stroke="none" />
-      <circle cx="12" cy="15.35" r="0.82" fill="#2b2b35" stroke="none" />
-      <circle cx="15.4" cy="15.35" r="0.82" fill="#2b2b35" stroke="none" />
-      <circle cx="8.6" cy="18.6" r="0.82" fill="#2b2b35" stroke="none" />
-      <circle cx="12" cy="18.6" r="0.82" fill="#2b2b35" stroke="none" />
-      <circle cx="15.4" cy="18.6" r="0.82" fill="#2b2b35" stroke="none" />
+      <rect x="4.2" y="2.6" width="15.6" height="18.8" rx="3.3" fill="currentColor" />
+      <rect x="7.2" y="5.5" width="9.6" height="3.5" rx="1.1" fill="#2b2b35" />
+      <circle cx="8.8" cy="12.3" r="0.95" fill="#2b2b35" />
+      <circle cx="12" cy="12.3" r="0.95" fill="#2b2b35" />
+      <circle cx="15.2" cy="12.3" r="0.95" fill="#2b2b35" />
+      <circle cx="8.8" cy="15.6" r="0.95" fill="#2b2b35" />
+      <circle cx="12" cy="15.6" r="0.95" fill="#2b2b35" />
+      <circle cx="15.2" cy="15.6" r="0.95" fill="#2b2b35" />
+      <circle cx="8.8" cy="18.9" r="0.95" fill="#2b2b35" />
+      <circle cx="12" cy="18.9" r="0.95" fill="#2b2b35" />
+      <circle cx="15.2" cy="18.9" r="0.95" fill="#2b2b35" />
     </svg>
   );
 }
