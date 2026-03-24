@@ -59,22 +59,18 @@ function getLastTypedNumber(nextExpr: string) {
 
 function CalcIcon() {
   return (
-    <svg
-      viewBox="0 0 24 24"
-      className="calc-icon"
-      aria-hidden="true"
-    >
-      <rect x="4.2" y="2.6" width="15.6" height="18.8" rx="3.3" fill="currentColor" />
-      <rect x="7.2" y="5.5" width="9.6" height="3.5" rx="1.1" fill="#2b2b35" />
-      <circle cx="8.8" cy="12.3" r="0.95" fill="#2b2b35" />
-      <circle cx="12" cy="12.3" r="0.95" fill="#2b2b35" />
-      <circle cx="15.2" cy="12.3" r="0.95" fill="#2b2b35" />
-      <circle cx="8.8" cy="15.6" r="0.95" fill="#2b2b35" />
-      <circle cx="12" cy="15.6" r="0.95" fill="#2b2b35" />
-      <circle cx="15.2" cy="15.6" r="0.95" fill="#2b2b35" />
-      <circle cx="8.8" cy="18.9" r="0.95" fill="#2b2b35" />
-      <circle cx="12" cy="18.9" r="0.95" fill="#2b2b35" />
-      <circle cx="15.2" cy="18.9" r="0.95" fill="#2b2b35" />
+    <svg viewBox="0 0 24 24" className="calc-icon" aria-hidden="true">
+      <rect x="4.2" y="2.1" width="15.6" height="19.8" rx="3.3" fill="currentColor" />
+      <rect x="6.8" y="5.1" width="10.4" height="4.0" rx="1.1" fill="#2b2b35" />
+      <circle cx="8.4" cy="12.6" r="0.95" fill="#2b2b35" />
+      <circle cx="12" cy="12.6" r="0.95" fill="#2b2b35" />
+      <circle cx="15.6" cy="12.6" r="0.95" fill="#2b2b35" />
+      <circle cx="8.4" cy="16.0" r="0.95" fill="#2b2b35" />
+      <circle cx="12" cy="16.0" r="0.95" fill="#2b2b35" />
+      <circle cx="15.6" cy="16.0" r="0.95" fill="#2b2b35" />
+      <circle cx="8.4" cy="19.4" r="0.95" fill="#2b2b35" />
+      <circle cx="12" cy="19.4" r="0.95" fill="#2b2b35" />
+      <circle cx="15.6" cy="19.4" r="0.95" fill="#2b2b35" />
     </svg>
   );
 }
